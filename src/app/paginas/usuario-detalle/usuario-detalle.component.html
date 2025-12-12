@@ -1,0 +1,24 @@
+<div class="contenedor_usuario">
+  <h3>{{miUsuario._nombre}} {{miUsuario._apellido}}</h3>
+  <p>{{miUsuario._correoElectronico}}</p>
+
+  <div>
+    <!-- Botón de edición: solo visible si mostrarBotonEditar es true -->
+    <button *ngIf="mostrarBotonEditar" mat-raised-button color="primary" (click)="editar()">
+      <mat-icon>edit</mat-icon> Editar
+    </button>
+
+    <!-- Botón de eliminación: solo visible si mostrarBotonEliminar es true -->
+    <button *ngIf="mostrarBotonEliminar" mat-raised-button color="warn" (click)="eliminar()">
+      <mat-icon>delete</mat-icon> Eliminar
+    </button>
+  </div>
+</div>
+
+<div class="botones">
+    <button *ngIf="mostrarBotonVolver" mat-raised-button color="warn" routerLink="/">
+      <mat-icon>arrow_back</mat-icon> Volver
+    </button>
+</div>
+
+

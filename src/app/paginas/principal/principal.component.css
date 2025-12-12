@@ -1,0 +1,37 @@
+/* Contenedor principal */
+.contenedor_acciones {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 24px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ¿Qué desea realizar? */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #006064; 
+  margin-bottom: 24px;
+}
+
+.contenedor_botones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Estilo de los botones */
+button {
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+/* Efecto hover */
+button:hover {
+  transform: scale(1.05);
+}

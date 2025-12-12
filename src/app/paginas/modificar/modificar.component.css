@@ -1,0 +1,18 @@
+/* Contenedor principal con misma estructura que formulario */
+.contenedor_tabla {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Título */
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #006064; 
+  margin-bottom: 24px;
+}

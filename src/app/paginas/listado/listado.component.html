@@ -1,0 +1,15 @@
+<div class="contenedor_tabla">
+  <h2>Listado de usuarios</h2>
+  <!-- Si existen usuarios, se muestra la lista -->
+  <div *ngIf="this.usuarios.length>0">
+    <!-- Recorre el array de usuarios y muestra un componente 'app-usuario-detalle' por cada uno -->
+    <div *ngFor="let unUsuario of this.usuarios">
+      <app-usuario-detalle 
+        [miAtributo]="unUsuario" 
+        [mostrarBotonEditar]="false" 
+        [mostrarBotonEliminar]="false">
+      </app-usuario-detalle>
+    </div>
+  </div>
+  <app-usuario-detalle [mostrarBotonVolver]="true"></app-usuario-detalle>
+</div>

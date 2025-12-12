@@ -1,0 +1,36 @@
+mat-icon {
+  margin-right: 8px;
+}
+
+.contenedor_usuario {
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #ECF1F6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contenedor_usuario h3 {
+  margin: 0 0 8px 0;
+  color: #006064;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+button {
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  margin: 5px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
